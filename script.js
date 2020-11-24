@@ -15,8 +15,8 @@ let faqs = [
 
 for(let pos in faqs){
     var div_elem = document.createElement('div');
-    div_elem.setAttribute('id', "div-cards")
-    div_elem.setAttribute('class', "div-cards-"+pos);
+    div_elem.setAttribute('class', "div-cards")
+    div_elem.setAttribute('id', "div-cards-"+pos);
     for(let key in faqs[pos]){
         var p_elem = document.createElement('p');
         p_elem.innerHTML = faqs[pos][key];
