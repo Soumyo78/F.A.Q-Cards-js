@@ -5,6 +5,12 @@
     background-color: cyan;
 }
 
+#search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #heading{
     font-family: 'Raleway', sans-serif;
     text-decoration: underline;
@@ -38,4 +44,12 @@
     background-repeat: no-repeat;
     background-size: 420px 300px;
     color: darkblue;
+}
+
+#srch-div{
+    background-image: url("https://images.stockfreeimages.com/952/sfixl/9521503.jpg");
+    background-repeat: no-repeat;
+    background-size: 450px 300px;
+    max-width: 420px;
+    max-height: 400px;
 }
