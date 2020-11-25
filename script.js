@@ -1,6 +1,4 @@
 let card_pos = [];
-let temp_btn_id = null;
-
 
 let faqs = [
     {question: "1. What is the capital of India ?", answer: "Ans: New Delhi."},
