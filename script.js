@@ -1,4 +1,5 @@
 let card_pos = [];
+let temp_btn_id = null;
 
 
 let faqs = [
@@ -31,7 +32,7 @@ for(let pos in faqs){
 
 document.getElementById('search-btn').addEventListener("click", () =>{
     let item_no =(document.getElementById('search-box').value)-1;
-    if(item_no < card_pos.length){
+    if(item_no < card_pos.length && item_no > 0){
         searched_div = document.getElementById('div-cards-'+item_no);
         searched_div.setAttribute('id', "srch-div")
         var body_container = document.querySelector('.body-container');
@@ -42,5 +43,16 @@ document.getElementById('search-btn').addEventListener("click", () =>{
     }
     else{
         alert("Question not found !");
+        location.reload();
     }
+    let temp_btn = document.getElementById('search-btn');
+    temp_btn.innerHTML = "Refresh";
+    temp_btn.setAttribute('id', "refresh-btn");
 })
+
+document.getElementById('search-btn').onclick = function(){
+    document.getElementById('search-box').disabled = true;
+    document.getElementById('refresh-btn').addEventListener("click", () =>{
+        location.reload();
+    })
+}

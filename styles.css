@@ -53,3 +53,27 @@
     max-width: 420px;
     max-height: 400px;
 }
+
+#search-box{
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    width: 300px;
+    height: 30px;
+}
+
+#search-btn{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    background-color: darkblue;
+    color: white;
+}
+
+#refresh-btn{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    background-color: darkgreen;
+    color: white;
+}
