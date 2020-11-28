@@ -41,7 +41,7 @@ document.getElementById('search-btn').addEventListener("click", () =>{
     }
     else{
         alert("Question not found !");
-        location.reload();
+        location.reload(true);
     }
     let temp_btn = document.getElementById('search-btn');
     temp_btn.innerHTML = "Refresh";
@@ -51,6 +51,6 @@ document.getElementById('search-btn').addEventListener("click", () =>{
 document.getElementById('search-btn').onclick = function(){
     document.getElementById('search-box').disabled = true;
     document.getElementById('refresh-btn').addEventListener("click", () =>{
-        location.reload();
+        location.reload(true);
     })
 }
